@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Harmony Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">Color Harmony Generator</div>
+    <div class="instruction">(Pick your color, compose a harmonious masterpiece!)</div>
+    <form id="form">
+        <input type="color"  value="#75d54F" name="color" id="color">
+        <select id="mode" name="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome Dark</option>
+            <option value="monochrome-light">Monochrome Light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+        <button type="submit" id="btn">Get color scheme</button>
+    </form>
+    <div class="scheme">
+    </div>
+    <div class="hex-copied hidden">Hex value copied! </div>
+</body>
+<script src="script.js"></script>
+</html>
